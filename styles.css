@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--text-font);
+}
+
+:root {
+  --frist: #e28625;
+  --second: #006971;
+  --third: #004140;
+  --bgcolor: #f2f2f2;
+  --white: #ffffff;
+  --title-font: "Big Shoulders Display", cursive;
+  --text-font: "Lexend Deca", sans-serif;
+}
+
+body {
+  background: var(--bgcolor);
+  display: flex;
+  justify-content: center; /*Alinear div en el centro*/
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--frist);
+  width: 307px;
+  height: 500px;
+  border-radius: 8px;
+  padding: 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container:nth-child(2) {
+  background-color: var(--second);
+}
+
+.container:nth-child(3) {
+  background-color: var(--third);
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--white);
+  margin-top: 10px;
+}
+
+p {
+  font-family: var(--text-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-bottom: 58px;
+}
+
+button {
+  background: var(--white);
+  border-radius: 25px;
+  padding: 12px 31.5px;
+  border: none;
+  font-weight: 15px;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--frist);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+button:hover,
+.container:nth-child(2) > button:hover,
+.container:nth-child(3) > button:hover {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.container:nth-child(2) > button {
+  color: var(--second);
+}
+
+.container:nth-child(3) > button {
+  color: var(--third);
+}
+
+img {
+  width: 60px;
+  height: auto;
+}
